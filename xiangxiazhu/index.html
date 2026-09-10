@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>乡下住着咱爹妈 - 农村父母生活关怀与亲情陪伴指南</title>
+<meta name="description" content="乡下住着咱爹妈，讲述农村父母的生活现状、思念之情与亲情陪伴方式。提供回乡探亲、远程关怀、健康照料、农村养老等实用内容，帮助在外子女更好地关心留守家乡的父母。">
+<meta name="keywords" content="乡下住着咱爹妈,农村父母,留守老人,亲情陪伴,回乡探亲,农村养老,关怀父母">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
+    color: #3a3226;
+    background-color: #faf6ef;
+    line-height: 1.75;
+    font-size: 16px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 顶部栏 */
+.topbar {
+    background-color: #5a3e2b;
+    color: #f3e6d4;
+    font-size: 13px;
+    padding: 8px 0;
+}
+.topbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.topbar span {
+    opacity: 0.9;
+}
+
+/* 页眉 */
+.site-header {
+    background: linear-gradient(180deg, #7a5230 0%, #6b4628 100%);
+    color: #fdf6ea;
+    padding: 26px 0 22px;
+    border-bottom: 4px solid #c99a5b;
+}
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.brand-mark {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #f7d9a8, #c99a5b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #5a3e2b;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+.brand-text h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.brand-text p {
+    font-size: 13px;
+    color: #e7d3b6;
+    margin-top: 3px;
+}
+.header-tagline {
+    font-size: 14px;
+    color: #f0dcc0;
+    text-align: right;
+    max-width: 320px;
+}
+
+/* 导航 */
+.main-nav {
+    background-color: #8a5f39;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 2px 8px rgba(90, 62, 43, 0.18);
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-list li a {
+    display: block;
+    padding: 14px 20px;
+    color: #fdf6ea;
+    font-size: 15px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.nav-list li a:hover,
+.nav-list li a.active {
+    background-color: #5a3e2b;
+    color: #ffd9a0;
+}
+
+/* 首屏 */
+.hero {
+    background: linear-gradient(135deg, #fdf3e3 0%, #f6e8d3 55%, #f0dcc0 100%);
+    padding: 54px 0 50px;
+    border-bottom: 1px solid #e6d4b8;
+}
+.hero-inner {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 40px;
+    align-items: center;
+}
+.hero h2 {
+    font-size: 32px;
+    color: #5a3e2b;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+.hero h2 em {
+    font-style: normal;
+    color: #b5762f;
+}
+.hero-lead {
+    font-size: 16px;
+    color: #5f5142;
+    margin-bottom: 20px;
+}
+.hero-points {
+    list-style: none;
+    margin-bottom: 26px;
+}
+.hero-points li {
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 10px;
+    color: #4a3f31;
+    font-size: 15px;
+}
+.hero-points li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #b5762f;
+    font-weight: 700;
+}
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 26px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: transform 0.15s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+    border: none;
+}
+.btn-primary {
+    background-color: #b5762f;
+    color: #fff8ee;
+    box-shadow: 0 4px 12px rgba(181, 118, 47, 0.32);
+}
+.btn-primary:hover {
+    background-color: #9c6323;
+    transform: translateY(-2px);
+}
+.btn-ghost {
+    background-color: transparent;
+    color: #7a5230;
+    border: 1.5px solid #b5762f;
+}
+.btn-ghost:hover {
+    background-color: #f3e2c8;
+}
+.hero-card {
+    background-color: #fffaf2;
+    border: 1px solid #e8d5b8;
+    border-radius: 12px;
+    padding: 26px 24px;
+    box-shadow: 0 10px 26px rgba(122, 82, 48, 0.12);
+}
+.hero-card h3 {
+    font-size: 18px;
+    color: #7a5230;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #dcc3a0;
+}
+.hero-card ul {
+    list-style: none;
+}
+.hero-card li {
+    padding: 9px 0;
+    border-bottom: 1px solid #f0e3d0;
+    font-size: 14.5px;
+    color: #5f5142;
+    display: flex;
+    gap: 10px;
+}
+.hero-card li:last-child {
+    border-bottom: none;
+}
+.hero-card li b {
+    color: #b5762f;
+    flex-shrink: 0;
+}
+
+/* 通用区块 */
+.section {
+    padding: 52px 0;
+}
+.section-alt {
+    background-color: #f4ecdd;
+}
+.section-head {
+    margin-bottom: 32px;
+}
+.section-head h2 {
+    font-size: 24px;
+    color: #5a3e2b;
+    position: relative;
+    padding-left: 16px;
+    line-height: 1.4;
+}
+.section-head h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    bottom: 6px;
+    width: 5px;
+    border-radius: 3px;
+    background-color: #b5762f;
+}
+.section-head p {
+    margin-top: 10px;
+    color: #7d6f5d;
+    font-size: 15px;
+    padding-left: 16px;
+}
+
+/* 卡片网格 */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.card {
+    background-color: #fffdf8;
+    border: 1px solid #ecdec6;
+    border-radius: 10px;
+    padding: 24px 22px;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+.card:hover {
+    box-shadow: 0 12px 24px rgba(122, 82, 48, 0.13);
+    transform: translateY(-3px);
+}
+.card-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background-color: #f7e7cc;
+    color: #a5681f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+.card h3 {
+    font-size: 17.5px;
+    color: #6b4628;
+    margin-bottom: 10px;
+}
+.card p {
+    font-size: 14.5px;
+    color: #6a5c4b;
+}
+.card ul {
+    margin-top: 12px;
+    list-style: none;
+}
+.card ul li {
+    font-size: 14px;
+    color: #6a5c4b;
+    padding-left: 18px;
+    position: relative;
+    margin-bottom: 7px;
+}
+.card ul li::before {
+    content: "•";
+    position: absolute;
+    left: 4px;
+    color: #b5762f;
+    font-weight: 700;
+}
+
+/* 探亲时间线 */
+.timeline {
+    border-left: 3px solid #d9bd93;
+    padding-left: 26px;
+    margin-left: 8px;
+}
+.timeline-item {
+    position: relative;
+    padding-bottom: 26px;
+}
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -34px;
+    top: 6px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #b5762f;
+    border: 3px solid #faf6ef;
+    box-shadow: 0 0 0 2px #d9bd93;
+}
+.timeline-item h3 {
+    font-size: 17px;
+    color: #6b4628;
+    margin-bottom: 7px;
+}
+.timeline-item p {
+    font-size: 14.5px;
+    color: #6a5c4b;
+}
+
+/* 关怀清单 */
+.checklist {
+    background-color: #fffdf8;
+    border: 1px solid #ecdec6;
+    border-radius: 10px;
+    padding: 28px 26px;
+}
+.checklist h3 {
+    font-size: 18px;
+    color: #6b4628;
+    margin-bottom: 16px;
+}
+.checklist-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 26px;
+}
+.checklist-grid label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+    color: #5f5142;
+    cursor: default;
+}
+.checklist-grid input[type="checkbox"] {
+    margin-top: 5px;
+    accent-color: #b5762f;
+    flex-shrink: 0;
+}
+
+/* 常见问题 */
+.faq-list {
+    display: grid;
+    gap: 16px;
+}
+.faq-item {
+    background-color: #fffdf8;
+    border: 1px solid #ecdec6;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.faq-item summary {
+    cursor: pointer;
+    padding: 16px 22px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #6b4628;
+    list-style: none;
+    position: relative;
+    padding-right: 48px;
+}
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+.faq-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #b5762f;
+    font-weight: 700;
+    transition: transform 0.2s ease;
+}
+.faq-item[open] summary::after {
+    content: "−";
+}
+.faq-item .faq-body {
+    padding: 0 22px 18px;
+    font-size: 14.5px;
+    color: #6a5c4b;
+    border-top: 1px dashed #e8d5b8;
+    padding-top: 14px;
+}
+
+/* 温馨提示 */
+.notice {
+    background-color: #fdf1de;
+    border-left: 5px solid #b5762f;
+    border-radius: 0 8px 8px 0;
+    padding: 20px 24px;
+    margin-top: 30px;
+}
+.notice h3 {
+    font-size: 16px;
+    color: #8a5f39;
+    margin-bottom: 8px;
+}
+.notice p {
+    font-size: 14.5px;
+    color: #6a5c4b;
+}
+
+/* 侧栏与内容组合 */
+.content-with-aside {
+    display: grid;
+    grid-template-columns: 2.1fr 1fr;
+    gap: 32px;
+    align-items: start;
+}
+.aside-box {
+    background-color: #fffdf8;
+    border: 1px solid #ecdec6;
+    border-radius: 10px;
+    padding: 22px 20px;
+    margin-bottom: 22px;
+}
+.aside-box h3 {
+    font-size: 16.5px;
+    color: #6b4628;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #dcc3a0;
+}
+.aside-box ul {
+    list-style: none;
+}
+.aside-box li {
+    font-size: 14.5px;
+    color: #6a5c4b;
+    padding: 8px 0;
+    border-bottom: 1px solid #f2e7d5;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.aside-box li:last-child {
+    border-bottom: none;
+}
+.aside-box li span {
+    color: #a5681f;
+    flex-shrink: 0;
+}
+.aside-note {
+    font-size: 13.5px;
+    color: #8a7c69;
+    line-height: 1.7;
+}
+
+/* 页脚 */
+.site-footer {
+    background-color: #4a3222;
+    color: #d8c6ae;
+    padding: 42px 0 24px;
+    font-size: 14px;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 30px;
+}
+.footer-col h3 {
+    font-size: 16px;
+    color: #f3e2c8;
+    margin-bottom: 14px;
+}
+.footer-col p {
+    font-size: 13.5px;
+    line-height: 1.9;
+    color: #bda98e;
+}
+.footer-col ul {
+    list-style: none;
+}
+.footer-col ul li {
+    margin-bottom: 9px;
+}
+.footer-col ul li a {
+    color: #bda98e;
+    font-size: 13.5px;
+    transition: color 0.2s ease;
+}
+.footer-col ul li a:hover {
+    color: #ffd9a0;
+}
+.footer-bottom {
+    border-top: 1px solid #5c4130;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #a08d74;
+}
+
+/* 响应式 */
+@media (max-width: 960px) {
+    .hero-inner {
+        grid-template-columns: 1fr;
+    }
+    .header-tagline {
+        text-align: left;
+        max-width: 100%;
+    }
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .content-with-aside {
+        grid-template-columns: 1fr;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 640px) {
+    body {
+        font-size: 15px;
+    }
+    .brand-text h1 {
+        font-size: 20px;
+    }
+    .hero h2 {
+        font-size: 25px;
+    }
+    .grid-3,
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+    .checklist-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    .nav-list li a {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+    .section {
+        padding: 40px 0;
+    }
+    .hero {
+        padding: 40px 0 36px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+    <div class="container">
+        <span>关注农村父母的生活与情感，让牵挂落到具体行动上</span>
+        <span>亲情陪伴 · 健康关怀 · 回乡探亲</span>
+    </div>
+</div>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="brand">
+            <div class="brand-mark">乡</div>
+            <div class="brand-text">
+                <h1>乡下住着咱爹妈</h1>
+                <p>在外子女的亲情关怀与陪伴参考</p>
+            </div>
+        </div>
+        <div class="header-tagline">
+            一句“乡下住着咱爹妈”，道出多少游子的牵挂。这里整理回乡探亲、远程关心、健康照料与农村养老的实用内容。
+        </div>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="container">
+        <ul class="nav-list">
+            <li><a href="#intro" class="active">首页</a></li>
+            <li><a href="#care">关怀方式</a></li>
+            <li><a href="#visit">回乡探亲</a></li>
+            <li><a href="#health">健康照料</a></li>
+            <li><a href="#checklist">关怀清单</a></li>
+            <li><a href="#faq">常见问题</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+
+    <!-- 首屏 -->
+    <section class="hero" id="intro">
+        <div class="container hero-inner">
+            <div>
+                <h2>乡下住着咱爹妈，<em>牵挂要落在日常</em></h2>
+                <p class="hero-lead">
+                    “乡下住着咱爹妈”是许多在外打拼的人心里最柔软的一句话。父母留在乡村，子女身在城市，距离带来了思念，也带来了照料上的现实难题。这个页面围绕农村父母的生活状态，整理可以真正执行的关怀方式，帮助你把牵挂变成看得见的行动。
+                </p>
+                <ul class="hero-points">
+                    <li>了解农村父母日常生活中容易被忽略的需求</li>
+                    <li>掌握远程关心与定期回乡的可行安排</li>
+                    <li>关注健康、用药、饮食与居家安全等实际问题</li>
+                    <li>在尊重父母生活习惯的前提下提供帮助</li>
+                </ul>
+                <div class="hero-actions">
+                    <a href="#care" class="btn btn-primary">查看关怀方式</a>
+                    <a href="#checklist" class="btn btn-ghost">对照关怀清单</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <h3>在外子女最常想到的几件事</h3>
+                <ul>
+                    <li><b>身体</b>父母有没有按时吃药、定期检查</li>
+                    <li><b>吃饭</b>一日三餐是否规律、营养是否够</li>
+                    <li><b>安全</b>用电用火、雨雪天气、独自在家</li>
+                    <li><b>心情</b>是否孤单、有没有人说说话</li>
+                    <li><b>农活</b>体力劳动是否超出承受范围</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关怀方式 -->
+    <section class="section" id="care">
+        <div class="container">
+            <div class="section-head">
+                <h2>把牵挂变成具体的关怀方式</h2>
+                <p>关心父母不必等到逢年过节，日常的小事积累起来，才是真正的陪伴。</p>
+            </div>
+            <div class="grid-3">
+                <article class="card">
+                    <div class="card-icon">电</div>
+                    <h3>固定频率的联系</h3>
+                    <p>与其想起来才打一次电话，不如约定相对固定的时间。父母会形成期待，也更容易开口说事。</p>
+                    <ul>
+                        <li>每周至少一次较长时间的通话</li>
+                        <li>视频看看家里的样子和父母的气色</li>
+                        <li>记住父母提到的身体和生活细节</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <div class="card-icon">物</div>
+                    <h3>按需寄送生活物资</h3>
+                    <p>农村购物不如城市方便，一些常用物品提前备好，能减少父母跑远路的辛苦。</p>
+                    <ul>
+                        <li>常用药、保暖衣物、防滑鞋</li>
+                        <li>米面粮油等较重的生活必需品</li>
+                        <li>提前确认需求，避免重复浪费</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <div class="card-icon">邻</div>
+                    <h3>与邻里保持联系</h3>
+                    <p>远亲不如近邻。和父母身边信得过的邻居、亲戚保持联系，遇到急事能第一时间知道。</p>
+                    <ul>
+                        <li>留下可靠邻居的联系方式</li>
+                        <li>逢年过节表达感谢与问候</li>
+                        <li>请对方帮忙留意异常情况</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <div class="card-icon">医</div>
+                    <h3>协助就医与用药</h3>
+                    <p>农村父母常有不舒服就忍着的情况，子女可以主动帮忙安排就诊和用药提醒。</p>
+                    <ul>
+                        <li>记录慢性病用药与复查时间</li>
+                        <li>帮忙预约、陪同或远程协调</li>
+                        <li>整理病历与检查报告便于复诊</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <div class="card-icon">家</div>
+                    <h3>改善居家条件</h3>
+                    <p>一些看似小的改造，能明显降低父母在家中的安全风险。</p>
+                    <ul>
+                        <li>卫生间加装扶手与防滑垫</li>
+                        <li>检查老旧线路与取暖设备</li>
+                        <li>夜间照明和台阶防滑处理</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <div class="card-icon">心</div>
+                    <h3>尊重父母的选择</h3>
+                    <p>关心不等于替父母做决定。理解他们对土地、老屋和乡邻的感情，沟通会更顺畅。</p>
+                    <ul>
+                        <li>先倾听，再提出建议</li>
+                        <li>不轻易否定他们的生活方式</li>
+                        <li>把“为你好”换成“一起商量”</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 回乡探亲 -->
+    <section class="section section-alt" id="visit">
+        <div class="container">
+            <div class="section-head">
+                <h2>回乡探亲可以这样安排</h2>
+                <p>回一次家不容易，提前规划能让陪伴更从容，也能把该办的事办妥。</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>出发前：先问清楚需要什么</h3>
+                    <p>打电话问问家里缺什么、父母身体怎么样、有没有要办的手续。把要买的东西和要办的事列成清单，避免回去后手忙脚乱。</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>到家后：先陪伴，再办事</h3>
+                    <p>刚到家不必急着安排任务。坐下来吃顿饭、聊聊天，让父母感受到你回来了。之后再处理修修补补、跑腿办事等事项。</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>在家期间：留意细节</h3>
+                    <p>观察父母的走路姿势、精神状态、饭量和睡眠。看看家里的药箱、米缸、取暖设备和电路，很多问题只有回到家才能发现。</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>离开前：把话说清楚</h3>
+                    <p>把下次联系时间、需要父母注意的事项、紧急情况找谁帮忙交代明白。留下必要的联系方式，也把父母的联系方式同步给可靠的亲友。</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>返程后：及时报平安</h3>
+                    <p>到家后给父母报平安，顺便聊聊这次回家的感受。让父母知道，你虽然走了，但心还留在家里。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 健康照料 + 侧栏 -->
+    <section class="section" id="health">
+        <div class="container">
+            <div class="section-head">
+                <h2>农村父母的健康照料要点</h2>
+                <p>农村医疗资源相对有限，子女多了解一些常识，能帮父母少走弯路。</p>
+            </div>
+            <div class="content-with-aside">
+                <div class="grid-2">
+                    <article class="card">
+                        <h3>慢性病管理</h3>
+                        <p>高血压、糖尿病等慢性病在农村中老年群体中较为常见。关键在于规律服药和定期监测，而不是不舒服才处理。</p>
+                        <ul>
+                            <li>帮助整理用药清单和服用时间</li>
+                            <li>提醒定期测量血压、血糖</li>
+                            <li>按医生要求安排复查</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>饮食与营养</h3>
+                        <p>农村饮食往往偏咸、偏油，蔬菜虽新鲜，但蛋白质摄入可能不足。可以温和地提出调整建议。</p>
+                        <ul>
+                            <li>适当增加蛋、奶、豆制品</li>
+                            <li>控制腌制食品和盐的用量</li>
+                            <li>注意饮水，不要等口渴才喝</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>体力劳动与休息</h3>
+                        <p>父母往往闲不下来，农活和家务容易超出身体承受范围。劝阻要讲方法，不能简单否定。</p>
+                        <ul>
+                            <li>了解近期农活安排，评估强度</li>
+                            <li>必要时请人帮忙或调整种植计划</li>
+                            <li>关注腰腿疼痛、关节不适等信号</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>情绪与社交</h3>
+                        <p>独居或空巢的父母容易感到孤单。保持社交往来、有事可做，对情绪状态很重要。</p>
+                        <ul>
+                            <li>鼓励参加村里的活动</li>
+                            <li>支持父母与亲友走动</li>
+                            <li>耐心听他们讲家长里短</li>
+                        </ul>
+                    </article>
+                </div>
+                <aside>
+                    <div class="aside-box">
+                        <h3>需要多留意的信号</h3>
+                        <ul>
+                            <li>体重明显下降 <span>留意</span></li>
+                            <li>走路变慢、容易累 <span>观察</span></li>
+                            <li>反复说身体不舒服 <span>重视</span></li>
+                            <li>情绪低落、不愿出门 <span>关心</span></li>
+                            <li>忘记吃药或吃错药 <span>协助</span></li>
+                        </ul>
+                    </div>
+                    <div class="aside-box">
+                        <h3>实用小提醒</h3>
+                        <p class="aside-note">
+                            父母的健康信息最好集中记录：常用药名称、过敏史、就诊医院、主治医生联系方式。遇到紧急情况时，这些信息能节省宝贵时间。记录方式不必复杂，一张纸、一个备忘录都可以。
+                        </p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关怀清单 -->
+    <section class="section section-alt" id="checklist">
+        <div class="container">
+            <div class="section-head">
+                <h2>在外子女关怀自查清单</h2>
+                <p>下面这些事项可以逐条对照，看看哪些已经做到，哪些还可以补上。</p>
+            </div>
+            <div class="checklist">
+                <h3>日常联系与了解</h3>
+                <div class="checklist-grid">
+                    <label><input type="checkbox"> 有相对固定的联系频率</label>
+                    <label><input type="checkbox"> 知道父母近期的身体状况</label>
+                    <label><input type="checkbox"> 了解家里近期的生活安排</label>
+                    <label><input type="checkbox"> 知道父母常用药是否充足</label>
+                    <label><input type="checkbox"> 有可靠邻居或亲友的联系方式</label>
+                    <label><input type="checkbox"> 父母知道紧急情况如何联系你</label>
+                    <label><input type="checkbox"> 家里有基本的防滑与照明措施</label>
+                    <label><input type="checkbox"> 用电用火设备定期检查过</label>
+                    <label><input type="checkbox"> 父母的就医和复查有安排</label>
+                    <label><input type="checkbox"> 逢年过节有明确的回家计划</label>
+                </div>
+            </div>
+            <div class="notice">
+                <h3>关于清单的使用建议</h3>
+                <p>清单不是考核，而是提醒。每个家庭的情况不同，能做的事情也不一样。挑出当下最需要关注的两三项，先做起来，比一次想做完所有事更实际。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="section-head">
+                <h2>常见问题</h2>
+                <p>关于农村父母关怀，在外子女问得比较多的一些问题。</p>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item" open>
+                    <summary>工作忙，联系父母的频率怎么定比较合适？</summary>
+                    <div class="faq-body">
+                        频率没有统一标准，关键是稳定和可预期。可以结合自己的作息，约定每周固定时间通话，平时用简短消息报个平安。相比偶尔一次长时间通话，规律的联系更能让父母安心。
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>父母不愿意来城里同住，怎么办？</summary>
+                    <div class="faq-body">
+                        很多农村父母对土地、老屋和乡邻有很深的感情，离开熟悉的环境反而会不适应。与其反复劝说，不如尊重他们的选择，同时把远程关怀和定期回乡安排得更扎实，让在家生活也能有保障。
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>父母身体不舒服却不肯去医院，如何沟通？</summary>
+                    <div class="faq-body">
+                        直接催促容易引起抵触。可以先了解他们顾虑什么，是怕花钱、怕麻烦，还是怕查出问题。把就医流程安排得简单一些，比如提前挂号、陪同前往、说明费用情况，往往比讲道理更有效。
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>寄东西回去，父母总说不需要，还要继续寄吗？</summary>
+                    <div class="faq-body">
+                        父母说“不需要”，很多时候是心疼子女花钱。可以少寄、精寄，选择确实用得上的物品，并提前沟通确认。比起数量，贴合实际需求更重要。
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>农村居家安全方面，最该先做哪些改善？</summary>
+                    <div class="faq-body">
+                        通常可以从防滑、照明、用电三个方面入手。卫生间和台阶的防滑处理、夜间通道的照明、老旧线路和取暖设备的检查，都是投入不大但效果明显的改善。
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>如何判断父母是否需要更多帮助？</summary>
+                    <div class="faq-body">
+                        可以留意一些变化：走路是否变慢、体重是否下降、是否经常忘记事情、是否不愿出门、家里是否变得凌乱。这些变化不一定代表严重问题，但值得进一步了解和关心。
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>乡下住着咱爹妈</h3>
+                <p>
+                    一个围绕农村父母生活与亲情陪伴的内容页面，关注在外子女与家乡父母之间的牵挂，整理可执行的关怀方式与实用建议。
+                </p>
+            </div>
+            <div class="footer-col">
+                <h3>内容导航</h3>
+                <ul>
+                    <li><a href="#intro">首页</a></li>
+                    <li><a href="#care">关怀方式</a></li>
+                    <li><a href="#visit">回乡探亲</a></li>
+                    <li><a href="#health">健康照料</a></li>
+                    <li><a href="#checklist">关怀清单</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>温馨提示</h3>
+                <p>
+                    本页面内容为生活参考，涉及健康与医疗事项时，请以专业医生的诊断和建议为准。遇到紧急情况，请及时联系当地医疗机构。
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2024 乡下住着咱爹妈 · 关注农村父母，让牵挂有处安放
+        </div>
+    </div>
+</footer>
+
+<script>
+(function () {
+    var navLinks = document.querySelectorAll('.nav-list a');
+    navLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+            navLinks.forEach(function (item) {
+                item.classList.remove('active');
+            });
+            link.classList.add('active');
+        });
+    });
+})();
+</script>
+
+</body>
+                  </html>
